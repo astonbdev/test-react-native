@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Router, Route, Link } from "./react-router";
-import Nav from "./Nav"
+import Nav from "./Nav";
+import Home from "./Home";
 
 function App (){
   return(
     <Router>
         <Nav></Nav>
-        <Route exact path="/" />
+        <Route exact path="/" component={Home}/>
         <Route path="/about" />
     </Router>
   );
